@@ -1,0 +1,12 @@
+<h2>Latest Marvel Users</h2>
+
+<div *ngIf="heroes">
+  <p *ngFor="let heroe of heroes;">{{heroe.name}}</p>
+</div>
+
+<preloader></preloader>
+
+<button class="courses__load-more"
+        (click)="getHeroes('small')">
+  MORE..
+</button>
