@@ -1,26 +1,15 @@
-.preloader {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 0, 0, .3);
+.preloader-ng {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  animation: preloaderSmallRotate 1s infinite linear;
+  border: 3px solid #000;
+  border-right-color: transparent;
+  border-radius: 50%;
 }
 
-.preloader__spinner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 80px;
-  margin-top: -52px;
-  margin-left: -40px;
-  animation: preloaderFullRotate 1s infinite linear;
-}
-
-@keyframes preloaderFullRotate {
+@keyframes preloaderSmallRotate {
   0% {
     transform: rotate(0deg);
   }
